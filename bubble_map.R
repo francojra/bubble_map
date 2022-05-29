@@ -57,11 +57,13 @@ m <- leaflet() %>%
                    fillColor = "blue", stroke = TRUE, fillOpacity = 0.8, 
                    group = "Blue") %>%
 
-  # Adicionar o widget de controlo
+  # Adicionar o widget de controle
   addLayersControl(overlayGroups = c("Red","Blue") , baseGroups = c("background 1","background 2"), 
                    options = layersControlOptions(collapsed = FALSE))
 
 m
+
+# Salvar arquivo ---------------------------------------------------------------------------------------------------------------------------
 
 # save the widget in a html file if needed.
 # library(htmlwidgets)
